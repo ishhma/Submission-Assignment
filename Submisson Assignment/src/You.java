@@ -18,13 +18,38 @@
  *  - Add achiu-frhsd as a collaborator
  *
  */
-public class You{
+public class You
+{
 
 	private String firstName;
 	private String lastName;
 	private String favoriteAnimal;
 	private int age;
-
-	// Write your code here
 	
+	public You()
+	{
+		firstName = "Ishma";
+		lastName = "Momin";
+		favoriteAnimal = "Turtle";
+		age = 17;
+	}
+	
+	public String getFullName()
+	{
+		return firstName + lastName;
+	}
+	
+	public String getFavoriteAnimal(String animal)
+	{
+		favoriteAnimal = animal;
+		return animal;
+	}
+	
+	public int happyBirthday()
+	{
+		System.out.println("HAPPY BIRTHDAY!");
+		age = age + 1;
+		return age;
+	}
 }
+
